@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="95" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="TheMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i8E-2K-C4A">
+                        <rect key="frame" x="5" y="5" width="82" height="135"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="dqH-zl-4aB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Edward Scissorhands" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCS-67-qpf">
+                        <rect key="frame" x="97" y="25" width="252" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="1990" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSq-qh-mau">
+                        <rect key="frame" x="97" y="55.5" width="39" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh2-JG-Wk3">
+                        <rect key="frame" x="364" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Lcy-0u-ac9"/>
+                            <constraint firstAttribute="height" constant="40" id="oJ9-Ze-HTb"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="heart" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drama, Fantasy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9s-mh-ehJ">
+                        <rect key="frame" x="146" y="55.5" width="243" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Hh2-JG-Wk3" secondAttribute="trailing" constant="10" id="3EQ-dJ-Ok2"/>
+                    <constraint firstItem="Hh2-JG-Wk3" firstAttribute="leading" secondItem="hCS-67-qpf" secondAttribute="trailing" constant="15" id="7mS-f2-53R"/>
+                    <constraint firstItem="i8E-2K-C4A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="AyN-kk-bDe"/>
+                    <constraint firstItem="hCS-67-qpf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="DMh-5a-YPg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kSq-qh-mau" secondAttribute="bottom" constant="35" id="DkM-85-3ft"/>
+                    <constraint firstItem="v9s-mh-ehJ" firstAttribute="top" secondItem="hCS-67-qpf" secondAttribute="bottom" constant="10" id="J4I-gw-RlG"/>
+                    <constraint firstItem="Hh2-JG-Wk3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KCN-tc-udw"/>
+                    <constraint firstAttribute="bottom" secondItem="i8E-2K-C4A" secondAttribute="bottom" constant="5" id="LAB-WW-w6u"/>
+                    <constraint firstItem="kSq-qh-mau" firstAttribute="leading" secondItem="i8E-2K-C4A" secondAttribute="trailing" constant="10" id="Wib-XE-uyp"/>
+                    <constraint firstItem="v9s-mh-ehJ" firstAttribute="leading" secondItem="kSq-qh-mau" secondAttribute="trailing" constant="10" id="bzz-Eb-Ha2"/>
+                    <constraint firstItem="kSq-qh-mau" firstAttribute="top" secondItem="hCS-67-qpf" secondAttribute="bottom" constant="10" id="oJK-h3-5hB"/>
+                    <constraint firstAttribute="trailing" secondItem="v9s-mh-ehJ" secondAttribute="trailing" constant="25" id="p9m-YK-Q6t"/>
+                    <constraint firstItem="i8E-2K-C4A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="pjq-hp-VXS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="v9s-mh-ehJ" secondAttribute="bottom" constant="35" id="sGC-5V-bfs"/>
+                    <constraint firstItem="hCS-67-qpf" firstAttribute="leading" secondItem="i8E-2K-C4A" secondAttribute="trailing" constant="10" id="wVH-TQ-npV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieGenderLabel" destination="v9s-mh-ehJ" id="913-5l-oc7"/>
+                <outlet property="movieImageView" destination="i8E-2K-C4A" id="Mhs-NH-7cv"/>
+                <outlet property="movieNameLabel" destination="hCS-67-qpf" id="r0D-iK-4O3"/>
+                <outlet property="movieYearLabel" destination="kSq-qh-mau" id="7aZ-8b-nsq"/>
+            </connections>
+            <point key="canvasLocation" x="157.97101449275362" y="48.549107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+    </resources>
+</document>
