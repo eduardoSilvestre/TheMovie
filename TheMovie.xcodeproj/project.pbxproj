@@ -67,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				A06FF13427178BFB0076159F /* Model */,
-				A06FF12B27177E410076159F /* Views */,
+				A06FF12B27177E410076159F /* Cells */,
 				A06FF117271778020076159F /* AppDelegate.swift */,
 				A06FF119271778020076159F /* SceneDelegate.swift */,
 				A06FF11B271778020076159F /* ViewController.swift */,
@@ -79,7 +79,7 @@
 			path = TheMovie;
 			sourceTree = "<group>";
 		};
-		A06FF12B27177E410076159F /* Views */ = {
+		A06FF12B27177E410076159F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				A06FF130271782860076159F /* MovieTableViewCell.swift */,
@@ -87,7 +87,7 @@
 				A06A28B42718D2E3004AD9A3 /* HeaderMovieTableViewCell.swift */,
 				A06A28B52718D2E3004AD9A3 /* HeaderMovieTableViewCell.xib */,
 			);
-			path = Views;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		A06FF13427178BFB0076159F /* Model */ = {
