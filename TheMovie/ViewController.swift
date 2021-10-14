@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         self.movieTableView.delegate = self
         self.movieTableView.dataSource = self
         self.movieTableView.register(MovieTableViewCell.nib(), forCellReuseIdentifier: MovieTableViewCell.identifier)
+        self.movieTableView.register(HeaderMovieTableViewCell.nib(), forCellReuseIdentifier: HeaderMovieTableViewCell.identifier)
     }
 
 }
@@ -42,11 +43,24 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell: MovieTableViewCell = movieTableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.identifier, for: indexPath) as? MovieTableViewCell else{return UITableViewCell()}
+        guard let cell: MovieTableViewCell = self.movieTableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.identifier, for: indexPath) as? MovieTableViewCell else{return UITableViewCell()}
         
         cell.setupCell(movieData: self.movieList[indexPath.row])
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let header: HeaderMovieTableViewCell = self.movieTableView.dequeueReusableCell(withIdentifier: HeaderMovieTableViewCell.identifier) as? HeaderMovieTableViewCell else {return UITableViewCell()}
+        
+        header.setupHeader()
+        header.backgroundColor = .black
+        
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 160
     }
     
     
